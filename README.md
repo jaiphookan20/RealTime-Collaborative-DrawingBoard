@@ -1,2 +1,39 @@
-# Multi-Threaded-Shared-DrawingBoard
-A Multi-Threaded Real-Time, Collaborative Shared Drawing Board where multiple users can draw on a shared canvas together at the same time. 
+# Multi-Threaded Realtime, Collaborative Drawing Board & Chat Application
+A Multi-Threaded Real-Time, Collaborative Shared Drawing Board where multiple users can draw on a shared canvas together at the same time and chat together at the same time. 
+This distributed shared whiteboard application enables real-time collaboration among multiple users. Users can concurrently draw and modify shapes on the whiteboard, allowing for collaborative brainstorming, presentations, or creative work.
+
+# Class Diagram:
+![image](https://github.com/jaiphookan20/Multi-Threaded-Shared-DrawingBoard/assets/52240311/05335548-c447-4deb-bd61-c66a203b308c)
+
+# Key Operations:
+
+Key Operations
+1) Connect to the Whiteboard:
+Users can connect to the whiteboard application by providing a username. The application validates the username and assigns a unique identifier (userId) to the user. The JoinWhiteboard class handles this operation.
+
+https://lh3.googleusercontent.com/keep-bbsk/AAAetVIpHtb-G2tLLYQF4xULpt-ZUlwln59Jle3c2z2wm0hy8lOSCyv9Iaklm4Uxc15szlbNE_uwjlyOQQjMDPJnJDmxECybKbCgc7tZWiCSI0garwk=s512
+
+3) Draw Shapes:
+Users can draw various shapes on the whiteboard, such as lines, rectangles, circles, ovals or even text. The application provides drawing tools and options to choose colors from a list of 16 predefined colors.. The DrawFrame class and related shape classes (Shape, ShapeAdapter) are involved in handling shape drawing operations.
+
+https://lh3.googleusercontent.com/keep-bbsk/AAAetVLeSH5ZJX2rLaoU09sWKlFQCsWIvpSxnIJKE3Dkoe2m2zQATy-8QeWCCmvV-kaVIcfIrHroqr323k4fAlK_XtK9SchrxCjQ644lrDGE9sY6kAd3=s512
+
+5) Synchronize Shape Updates:
+When a user draws a certain shape, the changes need to be synchronized and reflected in real-time on the whiteboard for all connected users. The application employs a synchronization mechanism using Java RMI, to propagate shape updates to other clients. The IRemote interface and related server-side methods handle the synchronization of shape updates.
+
+![image](https://github.com/jaiphookan20/Multi-Threaded-Shared-DrawingBoard/assets/52240311/d31ffd79-3676-4d16-800b-17ff9d0a3f1f)
+
+6) Chat Functionality:
+Users can engage in real-time chat communication within the whiteboard application. They can send and receive chat messages, which are displayed in the chat area of the user interface.
+
+# Advanced Features:
+5) User Removal:  
+While all users are allowed to participate in the whiteboard activities, only the Manager i.e. the first user to join has the option to remove certain users from the userlist. 
+
+6) Load Whiteboard State / Open File: 
+Users can load a previously saved whiteboard state from a file. This operation allows users to retrieve and continue working on a previously saved whiteboard session. The application supports loading whiteboard state files in the appropriate format and updates the whiteboard interface with the loaded shapes and properties.
+
+7) Clear Whiteboard: 
+Users can choose to clear the entire whiteboard, removing all the drawn shapes and resetting the canvas. This operation provides a way to start afresh or remove unwanted content from the whiteboard. The application provides a ‘new’ menu option that triggers the necessary methods to clear the whiteboard.
+
+8) Save Whiteboard State: The Manager i.e. the first user has the ability to save the current state of the whiteboard, including all the drawn shapes and associated properties. This operation allows for the preservation of all the user's work and allows it to be loaded later by saving it. 
