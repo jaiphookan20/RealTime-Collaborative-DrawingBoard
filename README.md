@@ -2,6 +2,8 @@
 A Multi-Threaded Real-Time, Collaborative Shared Drawing Board where multiple users can draw on a shared canvas together at the same time and chat together at the same time. 
 This distributed shared whiteboard application enables real-time collaboration among multiple users. Users can concurrently draw and modify shapes on the whiteboard, allowing for collaborative brainstorming, presentations, or creative work.
 
+Used Java, Multi-Threading/Concurrency principles, Remote Method Invocation.
+
 # Class Diagram:
 ![image](https://github.com/jaiphookan20/Multi-Threaded-Shared-DrawingBoard/assets/52240311/05335548-c447-4deb-bd61-c66a203b308c)
 
@@ -11,12 +13,9 @@ Key Operations
 1) Connect to the Whiteboard:
 Users can connect to the whiteboard application by providing a username. The application validates the username and assigns a unique identifier (userId) to the user. The JoinWhiteboard class handles this operation.
 
-https://lh3.googleusercontent.com/keep-bbsk/AAAetVIpHtb-G2tLLYQF4xULpt-ZUlwln59Jle3c2z2wm0hy8lOSCyv9Iaklm4Uxc15szlbNE_uwjlyOQQjMDPJnJDmxECybKbCgc7tZWiCSI0garwk=s512
-
 3) Draw Shapes:
 Users can draw various shapes on the whiteboard, such as lines, rectangles, circles, ovals or even text. The application provides drawing tools and options to choose colors from a list of 16 predefined colors.. The DrawFrame class and related shape classes (Shape, ShapeAdapter) are involved in handling shape drawing operations.
 
-https://lh3.googleusercontent.com/keep-bbsk/AAAetVLeSH5ZJX2rLaoU09sWKlFQCsWIvpSxnIJKE3Dkoe2m2zQATy-8QeWCCmvV-kaVIcfIrHroqr323k4fAlK_XtK9SchrxCjQ644lrDGE9sY6kAd3=s512
 
 5) Synchronize Shape Updates:
 When a user draws a certain shape, the changes need to be synchronized and reflected in real-time on the whiteboard for all connected users. The application employs a synchronization mechanism using Java RMI, to propagate shape updates to other clients. The IRemote interface and related server-side methods handle the synchronization of shape updates.
