@@ -9,7 +9,8 @@ Used Java, Multi-Threading/Concurrency principles, Remote Method Invocation.
 ![](https://github.com/jaiphookan20/RealTime-Collaborative-DrawingBoard/blob/main/Collaborative%20Whiteboard.gif)
 
 # Class Diagram:
-![image](https://github.com/jaiphookan20/Multi-Threaded-Shared-DrawingBoard/assets/52240311/05335548-c447-4deb-bd61-c66a203b308c)
+
+![Screenshot 2024-04-24 at 10 45 54 pm](https://github.com/jaiphookan20/RealTime-Collaborative-DrawingBoard/assets/52240311/185c81db-37a1-414f-9065-e419b064addf)
 
 ## Key Operations:
 
