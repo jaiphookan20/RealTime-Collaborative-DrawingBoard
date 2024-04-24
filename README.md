@@ -8,22 +8,25 @@ Used Java, Multi-Threading/Concurrency principles, Remote Method Invocation.
 # Class Diagram:
 ![image](https://github.com/jaiphookan20/Multi-Threaded-Shared-DrawingBoard/assets/52240311/05335548-c447-4deb-bd61-c66a203b308c)
 
-# Key Operations:
+## Feature Run-Through:
+![](https://github.com/jaiphookan20/Android-Real-Time-Location-Tracking-App-for-Families/blob/main/Geofence2.gif)
+
+## Key Operations:
 
 Key Operations
-1) Connect to the Whiteboard:
+## 1) Connect to the Whiteboard:
 Users can connect to the whiteboard application by providing a username. The application validates the username and assigns a unique identifier (userId) to the user. The JoinWhiteboard class handles this operation.
 
-3) Draw Shapes:
+## 2) Draw Shapes:
 Users can draw various shapes on the whiteboard, such as lines, rectangles, circles, ovals or even text. The application provides drawing tools and options to choose colors from a list of 16 predefined colors.. The DrawFrame class and related shape classes (Shape, ShapeAdapter) are involved in handling shape drawing operations.
 
 
-5) Synchronize Shape Updates:
+## 3) Synchronize Shape Updates:
 When a user draws a certain shape, the changes need to be synchronized and reflected in real-time on the whiteboard for all connected users. The application employs a synchronization mechanism using Java RMI, to propagate shape updates to other clients. The IRemote interface and related server-side methods handle the synchronization of shape updates.
 
 ![image](https://github.com/jaiphookan20/Multi-Threaded-Shared-DrawingBoard/assets/52240311/d31ffd79-3676-4d16-800b-17ff9d0a3f1f)
 
-6) Chat Functionality:
+## 4) Chat Functionality:
 Users can engage in real-time chat communication within the whiteboard application. They can send and receive chat messages, which are displayed in the chat area of the user interface.
 
 # Advanced Features:
