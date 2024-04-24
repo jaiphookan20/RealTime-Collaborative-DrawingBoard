@@ -5,11 +5,11 @@ Application leverages advanced multi-threading and concurrency mechanisms to ens
 
 Used Java, Multi-Threading/Concurrency principles, Remote Method Invocation.
 
+## Feature Run-Through:
+![](https://github.com/jaiphookan20/RealTime-Collaborative-DrawingBoard/blob/main/Collaborative%20Whiteboard.gif)
+
 # Class Diagram:
 ![image](https://github.com/jaiphookan20/Multi-Threaded-Shared-DrawingBoard/assets/52240311/05335548-c447-4deb-bd61-c66a203b308c)
-
-## Feature Run-Through:
-![](https://github.com/jaiphookan20/Android-Real-Time-Location-Tracking-App-for-Families/blob/main/Geofence2.gif)
 
 ## Key Operations:
 
