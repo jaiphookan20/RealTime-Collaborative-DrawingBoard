@@ -1,9 +1,8 @@
 # Multi-Threaded Realtime, Collaborative Drawing Board & Chat Application
-A Multi-Threaded Real-Time, Collaborative Shared Drawing Board where multiple users can draw on a shared canvas together at the same time and chat together at the same time. <br>
-<br>
-This distributed shared whiteboard application enables real-time collaboration among multiple users. Users can concurrently draw and modify shapes on the whiteboard, allowing for collaborative brainstorming, presentations, or creative work. <br>
-<br>
-Application leverages advanced multi-threading and concurrency mechanisms to ensure seamless real-time collaboration, enabling multiple users to simultaneously draw and interact without any lag or overlap issues.
+* A Multi-Threaded Real-Time, Collaborative Shared Drawing Board where multiple users can draw on a shared canvas together at the same time and chat together at the same time. <br>
+* This distributed shared whiteboard application enables real-time collaboration among multiple users.
+* Users can concurrently draw and modify shapes on the whiteboard, allowing for collaborative brainstorming, presentations, or creative work. 
+* Application leverages advanced multi-threading and concurrency mechanisms to ensure seamless real-time collaboration, enabling multiple users to simultaneously draw and interact without any lag or overlap issues.
 
 Used Java, Multi-Threading/Concurrency principles, Remote Method Invocation.
 
